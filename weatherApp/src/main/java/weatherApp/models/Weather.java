@@ -1,6 +1,5 @@
 package weatherApp.models;
 
-import jdk.internal.net.http.common.Pair;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 
@@ -9,11 +8,41 @@ public class Weather {
     @Id
     public ObjectId id;
 
+
+    String coords;
+    String cityName;
     double temp;
-    Pair<Double,Double> coords;
-    int humidity;
+    double humidity;
     double tempMax;
     double tempMin;
+
+
+    public Weather() {
+    }
+
+    public ObjectId getId() {
+        return id;
+    }
+
+    public void setId(ObjectId id) {
+        this.id = id;
+    }
+
+    public String getCoords() {
+        return coords;
+    }
+
+    public void setCoords(String coords) {
+        this.coords = coords;
+    }
+
+    public String getCityName() {
+        return cityName;
+    }
+
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
+    }
 
     public double getTemp() {
         return temp;
@@ -23,19 +52,11 @@ public class Weather {
         this.temp = temp;
     }
 
-    public Pair<Double, Double> getCoords() {
-        return coords;
-    }
-
-    public void setCoords(Pair<Double, Double> coords) {
-        this.coords = coords;
-    }
-
-    public int getHumidity() {
+    public double getHumidity() {
         return humidity;
     }
 
-    public void setHumidity(int humidity) {
+    public void setHumidity(double humidity) {
         this.humidity = humidity;
     }
 
@@ -55,10 +76,11 @@ public class Weather {
         this.tempMin = tempMin;
     }
 
-    public Weather(ObjectId id, double temp, Pair<Double, Double> coords, int humidity, double tempMax, double tempMin) {
+    public Weather(ObjectId id, String coords, String cityName, double temp, double humidity, double tempMax, double tempMin) {
         this.id = id;
-        this.temp = temp;
         this.coords = coords;
+        this.cityName = cityName;
+        this.temp = temp;
         this.humidity = humidity;
         this.tempMax = tempMax;
         this.tempMin = tempMin;

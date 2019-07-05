@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 public class Tourist {
 
     @Id
-    public ObjectId _id;
+    public ObjectId id;
 
     public String name;
     public String location;
@@ -15,19 +15,19 @@ public class Tourist {
     public Tourist() {
     }
 
-    public Tourist(ObjectId _id, String name, String location, String date) {
-        this._id = _id;
+    public Tourist(ObjectId id, String name, String location, String date) {
+        this.id = id;
         this.name = name;
         this.location = location;
         this.date = date;
     }
 
-    public String get_id() {
-        return _id.toHexString();
+    public String getId() {
+        return id.toHexString();
     }
 
-    public void set_id(ObjectId _id) {
-        this._id = _id;
+    public void setId(ObjectId id) {
+        this.id = id;
     }
 
     public String getName() {

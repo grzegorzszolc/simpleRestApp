@@ -1,4 +1,4 @@
-package comarch.rest_tutorial;
+package weatherApp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
