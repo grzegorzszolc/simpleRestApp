@@ -9,17 +9,17 @@ public class Tourist {
     public ObjectId _id;
 
     public String name;
-    public String species;
-    public String breed;
+    public String location;
+    public String date;
 
     public Tourist() {
     }
 
-    public Tourist(ObjectId _id, String name, String species, String breed) {
+    public Tourist(ObjectId _id, String name, String location, String date) {
         this._id = _id;
         this.name = name;
-        this.species = species;
-        this.breed = breed;
+        this.location = location;
+        this.date = date;
     }
 
     public String get_id() {
@@ -38,19 +38,19 @@ public class Tourist {
         this.name = name;
     }
 
-    public String getSpecies() {
-        return species;
+    public String getLocation() {
+        return location;
     }
 
-    public void setSpecies(String species) {
-        this.species = species;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
-    public String getBreed() {
-        return breed;
+    public String getDate() {
+        return date;
     }
 
-    public void setBreed(String breed) {
-        this.breed = breed;
+    public void setDate(String date) {
+        this.date = date;
     }
 }
