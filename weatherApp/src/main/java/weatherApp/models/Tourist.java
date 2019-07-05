@@ -3,7 +3,7 @@ package weatherApp.models;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 
-public class Pets {
+public class Tourist {
 
     @Id
     public ObjectId _id;
@@ -12,10 +12,10 @@ public class Pets {
     public String species;
     public String breed;
 
-    public Pets() {
+    public Tourist() {
     }
 
-    public Pets(ObjectId _id, String name, String species, String breed) {
+    public Tourist(ObjectId _id, String name, String species, String breed) {
         this._id = _id;
         this.name = name;
         this.species = species;
