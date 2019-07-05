@@ -1,4 +1,4 @@
-package comarch.rest_tutorial;
+package comarch.weatherApp;
 
 
 import comarch.rest_tutorial.models.Pets;

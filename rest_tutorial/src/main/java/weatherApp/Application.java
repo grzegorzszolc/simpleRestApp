@@ -1,4 +1,4 @@
-package comarch.rest_tutorial;
+package comarch.weatherApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
