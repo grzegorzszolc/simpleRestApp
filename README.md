@@ -1,1 +1,1 @@
-# comarchSimpleRestApp
+# SimpleRestApp
